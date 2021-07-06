@@ -51,23 +51,43 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
       */
 
     </style>
-    <title>My Album Website</title>
+    <title>My Music Website</title>
   </head>
   <body>
 
-  <nav class="navbar navbar-dark bg-dark">
-   <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-  <a class="nav1" href="#1">My Favorites</a>
-  <a class="nav2" href="#2">Worst Albums</a>
-  </nav>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+        <li class="nav-item active">
+            <a class="nav-link" href="#">Home</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#1">About Me</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#2">Favorite Albums</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#3">Worst Albums</a>
+        </li>
+        </ul>
+    </div>
+    </nav>
+
   <div class="favorites">
-  <h1>My Favorite Music Albums</h1>
+  <h1 class="text-center">My Music Website</h1>
 
- <h3>About me</h3>
+ <div id="1">
+ <h3 class="text-center">About me</h3>
 
- <p>I am Sara</p>
+ <p class="text-center">I am Sara</p>
+ </div>
 
-  <div class="container" id="1">
+  <div class="container" id="2">
+  <h3 class="text-center">My Favorite Music Albums</h3>
     <div class="row">
         <div class="card m-2" style="width: 18rem;">
         <img class="img mt-2" src="https://lastfm.freetls.fastly.net/i/u/770x0/b8a2f25fbdce30cf18e7e5ca8088b21f.webp#b8a2f25fbdce30cf18e7e5ca8088b21f" class="card-img-top" alt="...">
@@ -181,9 +201,8 @@ HINT: Manage your time in order to finish the structure and responsiveness befor
   </div>
   </div>
 
+  <div class="worst text-center mt-2" id="3">
   <h3>Top 3 Worst Albums</h3>
-
-  <div class="worst" id="2">
   <ol>
     <li>Speedin' Bullet 2 Heaven by Kid Cudi</li>
      <li>Angelic 2 the Core by Corey Feldman</li>
